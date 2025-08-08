@@ -542,7 +542,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/?page=history" onclick="handleMobileNavClick()">
-                                <i class="fas fa-history"></i> ประวัติ
+                                <i class="fas fa-history"></i> ประวัติ ศฝร.ภ.8
                             </a></li>
                             <li><a class="dropdown-item" href="/?page=org-structure" onclick="handleMobileNavClick()">
                                 <i class="fas fa-sitemap"></i> โครงสร้าง ศฝร.
