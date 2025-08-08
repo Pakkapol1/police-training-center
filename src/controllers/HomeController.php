@@ -273,10 +273,16 @@ class HomeController extends BaseModel {
         $this->loadView('main/location-map', compact('title'));
     }
 
-    public function about() {
-        $title = 'เกี่ยวกับเรา - ศูนย์ฝึกอบรมตำรวจภูธรภาค 8';
+    public function history() {
+        $title = 'ประวัติ - ศูนย์ฝึกอบรมตำรวจภูธรภาค 8';
 
-        $this->loadView('main/about', compact('title'));
+        $this->loadView('main/history', compact('title'));
+    }
+
+    public function organizationStructure() {
+        $title = 'โครงสร้าง ศฝร. - ศูนย์ฝึกอบรมตำรวจภูธรภาค 8';
+
+        $this->loadView('main/org-structure', compact('title'));
     }
 
     public function webboard() {

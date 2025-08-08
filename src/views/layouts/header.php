@@ -535,11 +535,19 @@
                         </a>
                     </li>
 
-                    <!-- เกี่ยวกับเรา -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="/?page=about" onclick="handleMobileNavClick()">
+                    <!-- เกี่ยวกับเรา - Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle collapsed" href="#" role="button" aria-expanded="false">
                             <i class="fas fa-info-circle"></i> เกี่ยวกับเรา
                         </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/?page=history" onclick="handleMobileNavClick()">
+                                <i class="fas fa-history"></i> ประวัติ
+                            </a></li>
+                            <li><a class="dropdown-item" href="/?page=org-structure" onclick="handleMobileNavClick()">
+                                <i class="fas fa-sitemap"></i> โครงสร้าง ศฝร.
+                            </a></li>
+                        </ul>
                     </li>
 
                     <!-- เมนูหลัก - Dropdown -->
