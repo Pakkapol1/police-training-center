@@ -83,8 +83,11 @@ try {
         case 'documents':
             $controller->documents();
             break;
-        case 'about':
-            $controller->about();
+        case 'history':
+            $controller->history();
+            break;
+        case 'org-structure':
+            $controller->organizationStructure();
             break;
         case 'contact':
             $controller->contact();
