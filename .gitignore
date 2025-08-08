@@ -1,0 +1,45 @@
+############################
+# OS / Editor
+############################
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+############################
+# PHP / Composer
+############################
+# In this project vendor is inside public
+/public/vendor/
+/vendor/
+composer.phar
+
+############################
+# Application uploads (do not version user content)
+############################
+/public/uploads/
+
+############################
+# Environment / Secrets
+############################
+.env
+.env.*.local
+
+############################
+# Node / Frontend (if any)
+############################
+node_modules/
+npm-debug.log*
+pnpm-lock.yaml
+yarn.lock
+
+############################
+# Caches / Temp
+############################
+cache/
+.cache/
+tmp/
+*.cache
+
+

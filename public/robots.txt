@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /src/
+Disallow: /database/
+
+Sitemap: http://www.school8.education.police.go.th/sitemap.xml

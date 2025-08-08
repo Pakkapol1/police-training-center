@@ -1,0 +1,458 @@
+:root {
+    --primary-color: #1e3a8a;
+    --secondary-color: #3b82f6;
+    --success-color: #10b981;
+    --warning-color: #f59e0b;
+    --danger-color: #ef4444;
+    --dark-color: #1f2937;
+    --light-color: #f8fafc;
+}
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden; /* ป้องกันการเลื่อนในแนวนอน */
+}
+
+/* Global Mobile Responsive */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Styles */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+/* Card Hover Effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Navigation */
+.navbar-nav .nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Forms */
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 2px solid #e5e7eb;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(30, 58, 138, 0.25);
+}
+
+/* Back to Top Button */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+/* Object Cover */
+.object-cover {
+    object-fit: cover;
+}
+
+/* Hero Slider */
+.hero-slider-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+/* Commander Section responsive positioning */
+.commander-section {
+    margin-top: 0;
+    transition: margin-top 0.3s ease;
+}
+
+/* เมื่อมีสไลด์ ให้ commander section ซ้อนทับเล็กน้อย */
+.hero-slider-section + .commander-section {
+    margin-top: -50px;
+}
+
+
+
+#heroSlider {
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 400px;
+}
+
+.slide-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: high-quality;
+    -webkit-image-rendering: -webkit-optimize-contrast;
+    -webkit-image-rendering: crisp-edges;
+    -webkit-image-rendering: high-quality;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+.slide-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.slide-link:hover {
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, var(--dark-color) 0%, #374151 100%);
+}
+
+footer .social-links a:hover {
+    color: var(--secondary-color) !important;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section .lead {
+        font-size: 1rem;
+    }
+    
+    #heroSlider,
+    .carousel-item,
+    .slide-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    #heroSlider,
+    .carousel-item,
+    .slide-image {
+        height: 250px;
+    }
+}
+/* Dropdown Animation */
+.dropdown-menu {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    display: block !important;
+    visibility: hidden;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* Hover Effects */
+.navbar-nav .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* Dropdown Item Animation */
+.dropdown-item {
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+.dropdown-item:hover {
+    border-left-color: #0d6efd;
+    background: linear-gradient(90deg, rgba(13, 110, 253, 0.1) 0%, transparent 100%);
+}
+
+/* Mobile Responsive */
+@media (max-width: 991.98px) {
+    .dropdown-menu {
+        position: static !important;
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        box-shadow: none;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.1);
+        margin-left: 1rem;
+    }
+}
+
+/* --- Official Location Map Modern Government Style --- */
+.location-official-container {
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+  font-family: 'Sarabun', 'TH Sarabun New', 'Noto Sans Thai', Arial, sans-serif;
+  color: #1a237e;
+}
+.location-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+.location-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+.location-header h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin: 0;
+  color: #16306b;
+  letter-spacing: 0.5px;
+}
+.location-header span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #26326a;
+  letter-spacing: 0.2px;
+}
+.location-divider {
+  height: 4px;
+  width: 100px;
+  background: #1a237e;
+  border-radius: 2px;
+  margin-top: 6px;
+}
+.location-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(26,35,126,0.08);
+  padding: 32px 28px 24px 28px;
+}
+.location-info {
+  margin-bottom: 18px;
+}
+.location-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+.location-icon {
+  font-size: 1.5em;
+  margin-top: 2px;
+  color: #e53935;
+}
+.location-label {
+  font-weight: 700;
+  min-width: 70px;
+  color: #16306b;
+  letter-spacing: 0.2px;
+  font-size: 1.18rem;
+}
+.location-text {
+  color: #222;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  font-size: 1.18rem;
+}
+.location-map-embed {
+  margin-top: 16px;
+  position: relative;
+}
+.location-map-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #1565c0;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 1.1rem;
+}
+.location-map-link:hover {
+  color: #0d47a1;
+}
+@media (max-width: 600px) {
+  .location-card { padding: 16px 6px; }
+  .location-header h1 { font-size: 1.5rem; }
+  .location-header span { font-size: 1.1rem; }
+  .location-logo { width: 40px; height: 40px; }
+  .location-row { font-size: 1.05rem; }
+  .location-label, .location-text { font-size: 1.05rem; }
+}
+
+/* ===============================
+   MOBILE RESPONSIVE DESIGN
+   =============================== */
+
+/* Extra Small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* Typography */
+    h1 { font-size: 1.5rem !important; }
+    h2 { font-size: 1.3rem !important; }
+    h3 { font-size: 1.2rem !important; }
+    h4 { font-size: 1.1rem !important; }
+    h5 { font-size: 1rem !important; }
+    
+    /* Container padding */
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    /* Card spacing */
+    .card {
+        margin-bottom: 1rem;
+        border-radius: 8px;
+    }
+    
+    .card-body {
+        padding: 0.8rem;
+    }
+    
+    /* Button responsive */
+    .btn {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .btn-lg {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    /* Form responsive */
+    .form-control,
+    .form-select {
+        font-size: 1rem;
+        padding: 0.5rem 0.75rem;
+    }
+    
+    /* Table responsive */
+    .table-responsive {
+        font-size: 0.85rem;
+    }
+    
+    /* Footer responsive */
+    footer .col-lg-4,
+    footer .col-lg-2 {
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Pagination responsive */
+    .pagination {
+        font-size: 0.8rem;
+    }
+    
+    .page-link {
+        padding: 0.3rem 0.6rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Tablet specific styles */
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* Desktop enhancements */
+    .card:hover {
+        transform: translateY(-3px);
+    }
+}
+
+/* Prevent horizontal scroll on mobile */
+@media (max-width: 767.98px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    
+    .row > * {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Touch-friendly interactions */
+@media (hover: none) and (pointer: coarse) {
+    .card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    
+    .btn:hover {
+        transform: none;
+    }
+}
