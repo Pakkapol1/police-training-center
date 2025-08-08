@@ -83,6 +83,9 @@ try {
         case 'documents':
             $controller->documents();
             break;
+        case 'mission':
+            $controller->mission();
+            break;
         case 'history':
             $controller->history();
             break;

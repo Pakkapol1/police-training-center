@@ -273,6 +273,12 @@ class HomeController extends BaseModel {
         $this->loadView('main/location-map', compact('title'));
     }
 
+    public function mission() {
+        $title = 'ภารกิจ ศฝร. - ศูนย์ฝึกอบรมตำรวจภูธรภาค 8';
+
+        $this->loadView('main/mission', compact('title'));
+    }
+
     public function history() {
         $title = 'ประวัติ - ศูนย์ฝึกอบรมตำรวจภูธรภาค 8';
 
