@@ -547,6 +547,9 @@
                             <li><a class="dropdown-item" href="/?page=org-structure" onclick="handleMobileNavClick()">
                                 <i class="fas fa-sitemap"></i> โครงสร้าง ศฝร.
                             </a></li>
+                            <li><a class="dropdown-item" href="/?page=mission" onclick="handleMobileNavClick()">
+                                <i class="fas fa-clipboard-list"></i> ภารกิจ ศฝร.
+                            </a></li>
                         </ul>
                     </li>
 
