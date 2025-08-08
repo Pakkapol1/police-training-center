@@ -269,13 +269,19 @@ class HomeController extends BaseModel {
 
     public function locationMap() {
         $title = 'แผนที่ตำแหน่งที่ตั้ง - ศูนย์ฝึกอบรมตำรวจภูธรภาค 8';
-        
+
         $this->loadView('main/location-map', compact('title'));
+    }
+
+    public function about() {
+        $title = 'เกี่ยวกับเรา - ศูนย์ฝึกอบรมตำรวจภูธรภาค 8';
+
+        $this->loadView('main/about', compact('title'));
     }
 
     public function webboard() {
         $title = 'เว็บบอร์ด - ศูนย์ฝึกอบรมตำรวจภูธรภาค 8';
-        
+
         $this->loadView('main/webboard', compact('title'));
     }
 

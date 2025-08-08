@@ -534,7 +534,14 @@
                             <i class="fas fa-home"></i> หน้าหลัก
                         </a>
                     </li>
-                    
+
+                    <!-- เกี่ยวกับเรา -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/?page=about" onclick="handleMobileNavClick()">
+                            <i class="fas fa-info-circle"></i> เกี่ยวกับเรา
+                        </a>
+                    </li>
+
                     <!-- เมนูหลัก - Dropdown -->
 <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle collapsed" href="#" role="button" aria-expanded="false">
